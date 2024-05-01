@@ -57,21 +57,7 @@ namespace LR4OOPpart1lastvers {
 			last = newNode;
 			size++;
 		}
-		Node* prev(Node* cr) {
-			current = first;
-			for (int i = 0; i < size; i++) {
-				Node* prevNode = nullptr;
-				Node* r = first;
-				while (r != nullptr) {
-					if (r->nextNode == cr) {
-						prevNode = r;
-						break;
-					}
-					r = r->nextNode;
-				}
-				return prevNode;
-			}
-		}
+		
 		void del(Shape* c) {
 			if (c == nullptr || first == nullptr) return;
 			Node* r = first;
